@@ -31,12 +31,12 @@ class DisparityExtender:
     def get_differences(self, ranges):
         """
         Calculate the differences between adjacent LiDAR scans. They 
-        should NOT be negative.
+        should NOT be negative. Return as an array
         """
     
     def get_disparities(self, differecnes):
         """
-        Find the indices where the disparities are
+        Find the indices where the disparities are. Return as an array.
         """
     
     def get_num_points_to_cover(self, distance, width):
@@ -87,4 +87,6 @@ class DisparityExtender:
         (Or whatever you named those variables. It is just important that
         the speed comes first and then the steering angle)
         """
+
+        return speed, steering_angle
 
